@@ -1,9 +1,12 @@
-const config = {
-    host : "localhost",
-    database: "database-script",
-    user : "postgres",
-    password : "root",
-    port: 5432
-}
+import { Client } from "pg";
 
-export default config;
+const config = {
+  host: "aws-0-sa-east-1.pooler.supabase.com",
+  port: 6543,
+  database: "postgres",
+  user: "postgres.ryvwoillpxdgdfogkdbq",
+  password: "skibidiMortis2",
+};
+
+const client = new Client(config);
+export default client;
